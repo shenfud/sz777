@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+  首页。站点已换成主题：面向海外年轻用户（学生/年轻人）的"免费与平价好物精选"。
+  正文是英文（给海外用户看），注释是中文（给你看）。
+  你基本不用改这里，部署即可用。详见 README.md。
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PocketPicks — Free & Cheap Picks for Students and Young Adults</title>
+  <meta name="description" content="Honest, budget-friendly picks of apps, tools, and gear for students and young adults. Free first, cheap second." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">PocketPicks</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="article.html">Free Apps</a>
+        <a href="gadgets.html">Budget Gear</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Useful stuff for students &amp; young adults — without the fluff</h1>
+      <p class="lead">
+        We find the free and budget-friendly apps, tools, and gear that actually make
+        student life easier. No sponsored rankings — just honest picks that save you money.
+      </p>
+      <a class="cta" href="article.html">Start with free apps →</a>
+    </section>
+
+    <section class="posts">
+      <h2>Latest picks</h2>
+
+      <article class="post-card">
+        <h3><a href="article.html">12 Free Apps Every Student Should Use in 2026</a></h3>
+        <p>Note-taking, writing, studying, and focus — all free, all actually useful.</p>
+        <a class="read-more" href="article.html">Read more →</a>
+      </article>
+
+      <article class="post-card">
+        <h3><a href="gadgets.html">10 Budget Gadgets Under $50 That Make Student Life Easier</a></h3>
+        <p>Small, cheap things that quietly improve your desk, your focus, and your day.</p>
+        <a class="read-more" href="gadgets.html">Read more →</a>
+      </article>
+    </section>
+
+    <p class="disclosure">
+      Some links on this site are affiliate links, which means we may earn a commission
+      if you sign up or buy — at no extra cost to you. We only recommend things we've used or researched.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> PocketPicks. Built with free, open tools.</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="about.html">About</a></p>
+    </div>
+  </footer>
+
+  <!-- 免费分析：部署到 Cloudflare Pages 后开启 Web Analytics，把下面代码替换成你的 snippet
+  <script src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"你的token"}' defer></script>
+  -->
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
